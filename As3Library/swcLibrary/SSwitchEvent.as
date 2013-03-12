@@ -1,0 +1,1 @@
+﻿package {	import flash.events.Event;	public class SSwitchEvent extends Event	{		static public const CHANGE = "change";		public var value;		public function SSwitchEvent(type)		{			super(type);		}		public override function clone():Event		{			var evt:SSwitchEvent = new SSwitchEvent(type);			evt.value = value;			return evt;		}	}}
